@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" data-lt-installed="true"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lenas Plants</title>
@@ -9,19 +9,23 @@
             margin: 0;
             padding: 0;
             overflow: hidden;
+            font-family: Arial, sans-serif;
+            background: url('path/to/forest.jpg') no-repeat center center fixed;
+            background-size: cover;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
             height: 100vh;
-            background-color: #f0f0f0;
-            font-family: Arial, sans-serif;
         }
 
         h1 {
             text-align: center;
             font-size: 3em;
+            color: pink;
             margin-top: 20px;
+            position: relative;
+            z-index: 1;
         }
 
         .leaf {
@@ -44,6 +48,8 @@
             width: 60%;
             height: 400px;
             margin-top: 20px;
+            position: relative;
+            z-index: 1;
         }
 
         model-viewer {
@@ -56,7 +62,7 @@
     <h1>Lenas Plants</h1>
 
     <div id="model-viewer-container">
-        <model-viewer src="path/to/your/model.glb" alt="A 3D model of a plant" auto-rotate camera-controls></model-viewer>
+        <model-viewer src="path/to/your/model.glb" alt="A 3D model of a plant" auto-rotate="" camera-controls="" ar-status="not-presenting"></model-viewer>
     </div>
 
     <script>
@@ -83,6 +89,6 @@
         setInterval(createLeaf, 1000);
     </script>
 
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-</body>
-</html>
+    <script type="module" src="Lenas%20Plants-Dateien/model-viewer.min.js"></script>
+
+<div class="leaf" style="left: 16.5121vw; animation-duration: 2.49648s; animation-delay: 4.03795s;"></div><div class="leaf" style="left: 42.6187vw; animation-duration: 3.14173s; animation-delay: 2.25559s;"></div><div class="leaf" style="left: 68.4187vw; animation-duration: 2.40125s; animation-delay: 3.33362s;"></div><div class="leaf" style="left: 4.82008vw; animation-duration: 3.7374s; animation-delay: 4.34417s;"></div><div class="leaf" style="left: 90.8493vw; animation-duration: 4.65704s; animation-delay: 1.58074s;"></div><div class="leaf" style="left: 55.0993vw; animation-duration: 3.5625s; animation-delay: 1.66855s;"></div><div class="leaf" style="left: 65.2163vw; animation-duration: 2.66387s; animation-delay: 3.10239s;"></div></body></html>
